@@ -2,9 +2,9 @@
   "version": "0.0.2",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
     "serve": "vite preview",
-    "build:postcss": "postcss tailwind.source.css -o tailwind.css"
+    "build": "vite build",
+    "build:postcss": "postcss tailwind.source.css -o ./dist/tailwind.css"
   },
   "devDependencies": {
     "autoprefixer": "^10.2.6",
