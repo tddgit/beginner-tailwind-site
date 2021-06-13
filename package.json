@@ -3,8 +3,8 @@
   "scripts": {
     "dev": "vite",
     "serve": "vite preview",
-    "build": "vite build",
-    "build:postcss": "postcss tailwind.source.css -o ./dist/tailwind.css"
+    "build": "NODE_ENV=production  postcss tailwind.source.css -o tailwind.css && vite build",
+    "build:postcss": "postcss tailwind.source.css -o tailwind.css"
   },
   "devDependencies": {
     "autoprefixer": "^10.2.6",
